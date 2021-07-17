@@ -1,0 +1,10 @@
+.vscode/*
+!.vscode/launch.json
+sdk/**
+!sdk/**/.gitkeep
+log_file/
+__pycache__/
+tmp/
+log_default*
+ultraface
+.DS_Store

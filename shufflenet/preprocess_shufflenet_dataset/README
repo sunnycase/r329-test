@@ -1,0 +1,6 @@
+## This is an example about how to generate the preprocess dataset.
+Use command  'python3 preprocess_for_resnet50_dataset.py' to run the example.
+
+For how to do the preprocess, please read the script preprocess_for_resnet50_dataset.py.
+
+## The example use only a very small dataset (5 pictures). For your own usage, you need to change your dataset (img/ and label.txt) and your preprocess function when you train the model.

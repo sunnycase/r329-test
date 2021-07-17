@@ -1,0 +1,1216 @@
+{
+"graph_name":"shufflenet",
+"platform target":"Z1_0701",
+"total nodes number":113,
+"perf nodes number":78,
+"nodes":[{
+"layer node name":"gpu_0_data_0",
+"op_type":"Input",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_conv3_0_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":16859136,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_conv3_0_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_pool_0_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":301056,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pool_0_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_pool_1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":75264,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pool_1_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_0_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":17561600,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_0_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_0",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_2",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_0_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_0_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1756160,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_0_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":19844608,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_1_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_block0_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_block0_1",
+"op_type":"Concat"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_block0_2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":106624,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_block0_2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_2_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29214976,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_2_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_4",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_6",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_6",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_1_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":2132480,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_1_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_3_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29321600,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_3_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block1_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_4_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29214976,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_4_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_8",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_10",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_10",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_2_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_2_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":2132480,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_2_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_5_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29321600,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_5_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block2_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_6_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29214976,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_6_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_12",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_14",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_14",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_3_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_3_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":2132480,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_3_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_7_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29321600,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_7_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block3_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_pool_2_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":106624,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pool_2_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_8_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29214976,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_8_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_16",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_18",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_18",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_4_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_4_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":533120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_4_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_9_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":7303744,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_9_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_block4_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_block4_1",
+"op_type":"Concat"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_block4_2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":53312,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_block4_2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_10_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_10_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_20",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_22",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_22",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_5_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_5_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_5_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_11_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_11_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block5_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_12_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_12_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_24",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_26",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_26",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_6_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_6_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_6_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_13_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_13_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block6_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_14_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_14_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_28",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_30",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_30",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_7_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_7_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_7_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_15_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_15_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block7_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_16_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_16_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_32",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_34",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_34",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_8_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_8_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_8_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_17_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_17_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block8_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_18_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_18_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_36",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_38",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_38",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_9_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_9_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_9_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_19_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_19_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block9_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_20_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_20_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_40",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_42",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_42",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_10_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_10_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_10_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_21_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_21_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block10_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_22_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_22_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_44",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_46",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_46",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_11_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_11_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1066240,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_11_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_23_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29161664,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_23_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block11_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_pool_3_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":53312,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pool_3_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_24_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29108352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_24_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_48",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_50",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_50",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_12_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_12_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":266560,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_12_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_25_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":7277088,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_25_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_block12_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_block12_1",
+"op_type":"Concat"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_block12_2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":26656,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_block12_2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_26_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29055040,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_26_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_52",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_54",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_54",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_13_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_13_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":533120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_13_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_27_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29081696,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_27_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block13_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_28_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29055040,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_28_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_56",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_58",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_58",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_14_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_14_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":533120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_14_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_29_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29081696,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_29_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block14_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_30_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29055040,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_30_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_60",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_OC2_DUMMY_62",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":0,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"OC2_DUMMY_62",
+"op_type":"Transpose"
+}
+]
+}
+,{
+"layer node name":"gpu_0_shuffle_15_1",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv3_15_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":533120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv3_15_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_gconv1_31_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":29081696,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_gconv1_31_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_block15_1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_final_avg_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":26656,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_final_avg_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_64",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_pred_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1090000,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pred_1",
+"op_type":"FullyConnected"
+}
+]
+}
+,{
+"layer node name":"gpu_0_softmax_1_pre_reshape",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_softmax_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":2000,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_softmax_1",
+"op_type":"Softmax"
+}
+]
+}
+],
+"origin_idx":[[0],[1],[2],[9],[3],[4],[5],[6],[7],[8],[10],[11],[12],[13],[14],[15],[16],[17,18],[19],[20],[21],[22],[23],[24,25],[26],[27],[28],[29],[30],[31,32],[39],[33],[34],[35],[36],[37],[38],[40],[41],[42],[43],[44],[45],[46],[47,48],[49],[50],[51],[52],[53],[54,55],[56],[57],[58],[59],[60],[61,62],[63],[64],[65],[66],[67],[68,69],[70],[71],[72],[73],[74],[75,76],[77],[78],[79],[80],[81],[82,83],[84],[85],[86],[87],[88],[89,90],[97],[91],[92],[93],[94],[95],[96],[98],[99],[100],[101],[102],[103],[104],[105,106],[107],[108],[109],[110],[111],[112,113],[114],[115],[116],[117],[118],[119,120],[121],[122],[123],[124],[125]],
+"run_node_idx":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[49],[50],[51],[52],[53],[54],[55],[56],[57],[58],[59],[60],[61],[62],[63],[64],[65],[66],[67],[68],[69],[70],[71],[72],[73],[74],[75],[76],[77],[78],[79],[80],[81],[82],[83],[84],[85],[86],[87],[88],[89],[90],[91],[92],[93],[94],[95],[96],[97],[98],[99],[100],[101],[102],[103],[104],[105],[106],[107],[108],[109],[110],[111],[112]],
+"profile":{
+"profile events":"default",
+"output size":2560,
+"frequency":800,
+"prof_unit":"AIFF"
+}
+,
+"magic number":"63b2bb9bea2f2caae1be1497e4a7509df069feea"
+}
+
