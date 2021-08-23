@@ -1,2 +1,3 @@
 build/*
 !build/*.bmp
+!build/aipu.bin
